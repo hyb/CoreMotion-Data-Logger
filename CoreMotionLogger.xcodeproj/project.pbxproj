@@ -16,6 +16,8 @@
 		C1AB77AF1459C55100F6EE34 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AB77AD1459C55100F6EE34 /* MainStoryboard_iPhone.storyboard */; };
 		C1AB77B21459C55100F6EE34 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AB77B01459C55100F6EE34 /* MainStoryboard_iPad.storyboard */; };
 		C1AB77B51459C55100F6EE34 /* CMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AB77B41459C55100F6EE34 /* CMLViewController.m */; };
+		C1AB77BD1459C58D00F6EE34 /* DataLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AB77BC1459C58D00F6EE34 /* DataLogger.m */; };
+		C1AB77BF1459C8CA00F6EE34 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AB77BE1459C8CA00F6EE34 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,19 @@
 		C1AB779B1459C55100F6EE34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C1AB779D1459C55100F6EE34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1AB779F1459C55100F6EE34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C1AB77A31459C55100F6EE34 /* CoreMotionLogger-Info.plist */ = {isa = PBXFileReference; path = "CoreMotionLogger-Info.plist"; sourceTree = "<group>"; };
+		C1AB77A31459C55100F6EE34 /* CoreMotionLogger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreMotionLogger-Info.plist"; sourceTree = "<group>"; };
 		C1AB77A51459C55100F6EE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1AB77A71459C55100F6EE34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C1AB77A91459C55100F6EE34 /* CoreMotionLogger-Prefix.pch */ = {isa = PBXFileReference; path = "CoreMotionLogger-Prefix.pch"; sourceTree = "<group>"; };
-		C1AB77AA1459C55100F6EE34 /* CMLAppDelegate.h */ = {isa = PBXFileReference; path = CMLAppDelegate.h; sourceTree = "<group>"; };
+		C1AB77A91459C55100F6EE34 /* CoreMotionLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreMotionLogger-Prefix.pch"; sourceTree = "<group>"; };
+		C1AB77AA1459C55100F6EE34 /* CMLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMLAppDelegate.h; sourceTree = "<group>"; };
 		C1AB77AB1459C55100F6EE34 /* CMLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMLAppDelegate.m; sourceTree = "<group>"; };
 		C1AB77AE1459C55100F6EE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C1AB77B11459C55100F6EE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		C1AB77B31459C55100F6EE34 /* CMLViewController.h */ = {isa = PBXFileReference; path = CMLViewController.h; sourceTree = "<group>"; };
+		C1AB77B31459C55100F6EE34 /* CMLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMLViewController.h; sourceTree = "<group>"; };
 		C1AB77B41459C55100F6EE34 /* CMLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMLViewController.m; sourceTree = "<group>"; };
+		C1AB77BB1459C58D00F6EE34 /* DataLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLogger.h; sourceTree = "<group>"; };
+		C1AB77BC1459C58D00F6EE34 /* DataLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLogger.m; sourceTree = "<group>"; };
+		C1AB77BE1459C8CA00F6EE34 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AB77BF1459C8CA00F6EE34 /* CoreMotion.framework in Frameworks */,
 				C1AB779C1459C55100F6EE34 /* UIKit.framework in Frameworks */,
 				C1AB779E1459C55100F6EE34 /* Foundation.framework in Frameworks */,
 				C1AB77A01459C55100F6EE34 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +58,7 @@
 		C1AB778C1459C55100F6EE34 = {
 			isa = PBXGroup;
 			children = (
+				C1AB77BE1459C8CA00F6EE34 /* CoreMotion.framework */,
 				C1AB77A11459C55100F6EE34 /* CoreMotionLogger */,
 				C1AB779A1459C55100F6EE34 /* Frameworks */,
 				C1AB77981459C55100F6EE34 /* Products */,
@@ -85,6 +92,8 @@
 				C1AB77B01459C55100F6EE34 /* MainStoryboard_iPad.storyboard */,
 				C1AB77B31459C55100F6EE34 /* CMLViewController.h */,
 				C1AB77B41459C55100F6EE34 /* CMLViewController.m */,
+				C1AB77BB1459C58D00F6EE34 /* DataLogger.h */,
+				C1AB77BC1459C58D00F6EE34 /* DataLogger.m */,
 				C1AB77A21459C55100F6EE34 /* Supporting Files */,
 			);
 			path = CoreMotionLogger;
@@ -167,6 +176,7 @@
 				C1AB77A81459C55100F6EE34 /* main.m in Sources */,
 				C1AB77AC1459C55100F6EE34 /* CMLAppDelegate.m in Sources */,
 				C1AB77B51459C55100F6EE34 /* CMLViewController.m in Sources */,
+				C1AB77BD1459C58D00F6EE34 /* DataLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
