@@ -216,12 +216,17 @@
     NSString *documentsDirectory = [paths objectAtIndex:0];
 
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
-    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterLongStyle];
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
 
     // Some filesystems hate colons
     NSString *dateString = [[dateFormatter stringFromDate:[NSDate date]] stringByReplacingOccurrencesOfString:@":" withString:@"_"];
+    // I hate spaces
+    dateString = [dateString stringByReplacingOccurrencesOfString:@" " withString:@"_"];
+    // Nobody can stand forward slashes
+    dateString = [dateString stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
 
+    
     if (_logAttitudeData) {
         NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"attitude_%@.txt", dateString, nil]];
 
