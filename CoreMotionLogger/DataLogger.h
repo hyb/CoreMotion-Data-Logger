@@ -12,8 +12,11 @@
 @interface DataLogger : NSObject {
 
     CMMotionManager *_motionManager;
-    NSOperationQueue *_imuQueue;
-
+    
+    NSOperationQueue *_deviceMotionQueue;
+    NSOperationQueue *_accelQueue;
+    NSOperationQueue *_gyroQueue;
+    
     NSString *_attitudeString;
     NSString *_gravityString;
     NSString *_magneticFieldString;
