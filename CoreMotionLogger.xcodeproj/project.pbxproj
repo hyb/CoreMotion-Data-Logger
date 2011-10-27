@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1AB779C1459C55100F6EE34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AB779B1459C55100F6EE34 /* UIKit.framework */; };
+		C1AB779E1459C55100F6EE34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AB779D1459C55100F6EE34 /* Foundation.framework */; };
+		C1AB77A01459C55100F6EE34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AB779F1459C55100F6EE34 /* CoreGraphics.framework */; };
+		C1AB77A61459C55100F6EE34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1AB77A41459C55100F6EE34 /* InfoPlist.strings */; };
+		C1AB77A81459C55100F6EE34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AB77A71459C55100F6EE34 /* main.m */; };
+		C1AB77AC1459C55100F6EE34 /* CMLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AB77AB1459C55100F6EE34 /* CMLAppDelegate.m */; };
+		C1AB77AF1459C55100F6EE34 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AB77AD1459C55100F6EE34 /* MainStoryboard_iPhone.storyboard */; };
+		C1AB77B21459C55100F6EE34 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AB77B01459C55100F6EE34 /* MainStoryboard_iPad.storyboard */; };
+		C1AB77B51459C55100F6EE34 /* CMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AB77B41459C55100F6EE34 /* CMLViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C1AB77971459C55100F6EE34 /* CoreMotionLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMotionLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AB779B1459C55100F6EE34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C1AB779D1459C55100F6EE34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1AB779F1459C55100F6EE34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C1AB77A31459C55100F6EE34 /* CoreMotionLogger-Info.plist */ = {isa = PBXFileReference; path = "CoreMotionLogger-Info.plist"; sourceTree = "<group>"; };
+		C1AB77A51459C55100F6EE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C1AB77A71459C55100F6EE34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1AB77A91459C55100F6EE34 /* CoreMotionLogger-Prefix.pch */ = {isa = PBXFileReference; path = "CoreMotionLogger-Prefix.pch"; sourceTree = "<group>"; };
+		C1AB77AA1459C55100F6EE34 /* CMLAppDelegate.h */ = {isa = PBXFileReference; path = CMLAppDelegate.h; sourceTree = "<group>"; };
+		C1AB77AB1459C55100F6EE34 /* CMLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMLAppDelegate.m; sourceTree = "<group>"; };
+		C1AB77AE1459C55100F6EE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C1AB77B11459C55100F6EE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C1AB77B31459C55100F6EE34 /* CMLViewController.h */ = {isa = PBXFileReference; path = CMLViewController.h; sourceTree = "<group>"; };
+		C1AB77B41459C55100F6EE34 /* CMLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMLViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1AB77941459C55100F6EE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AB779C1459C55100F6EE34 /* UIKit.framework in Frameworks */,
+				C1AB779E1459C55100F6EE34 /* Foundation.framework in Frameworks */,
+				C1AB77A01459C55100F6EE34 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1AB778C1459C55100F6EE34 = {
+			isa = PBXGroup;
+			children = (
+				C1AB77A11459C55100F6EE34 /* CoreMotionLogger */,
+				C1AB779A1459C55100F6EE34 /* Frameworks */,
+				C1AB77981459C55100F6EE34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1AB77981459C55100F6EE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1AB77971459C55100F6EE34 /* CoreMotionLogger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1AB779A1459C55100F6EE34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1AB779B1459C55100F6EE34 /* UIKit.framework */,
+				C1AB779D1459C55100F6EE34 /* Foundation.framework */,
+				C1AB779F1459C55100F6EE34 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1AB77A11459C55100F6EE34 /* CoreMotionLogger */ = {
+			isa = PBXGroup;
+			children = (
+				C1AB77AA1459C55100F6EE34 /* CMLAppDelegate.h */,
+				C1AB77AB1459C55100F6EE34 /* CMLAppDelegate.m */,
+				C1AB77AD1459C55100F6EE34 /* MainStoryboard_iPhone.storyboard */,
+				C1AB77B01459C55100F6EE34 /* MainStoryboard_iPad.storyboard */,
+				C1AB77B31459C55100F6EE34 /* CMLViewController.h */,
+				C1AB77B41459C55100F6EE34 /* CMLViewController.m */,
+				C1AB77A21459C55100F6EE34 /* Supporting Files */,
+			);
+			path = CoreMotionLogger;
+			sourceTree = "<group>";
+		};
+		C1AB77A21459C55100F6EE34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1AB77A31459C55100F6EE34 /* CoreMotionLogger-Info.plist */,
+				C1AB77A41459C55100F6EE34 /* InfoPlist.strings */,
+				C1AB77A71459C55100F6EE34 /* main.m */,
+				C1AB77A91459C55100F6EE34 /* CoreMotionLogger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1AB77961459C55100F6EE34 /* CoreMotionLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AB77B81459C55100F6EE34 /* Build configuration list for PBXNativeTarget "CoreMotionLogger" */;
+			buildPhases = (
+				C1AB77931459C55100F6EE34 /* Sources */,
+				C1AB77941459C55100F6EE34 /* Frameworks */,
+				C1AB77951459C55100F6EE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreMotionLogger;
+			productName = CoreMotionLogger;
+			productReference = C1AB77971459C55100F6EE34 /* CoreMotionLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1AB778E1459C55100F6EE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C1AB77911459C55100F6EE34 /* Build configuration list for PBXProject "CoreMotionLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C1AB778C1459C55100F6EE34;
+			productRefGroup = C1AB77981459C55100F6EE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1AB77961459C55100F6EE34 /* CoreMotionLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1AB77951459C55100F6EE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AB77A61459C55100F6EE34 /* InfoPlist.strings in Resources */,
+				C1AB77AF1459C55100F6EE34 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C1AB77B21459C55100F6EE34 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1AB77931459C55100F6EE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AB77A81459C55100F6EE34 /* main.m in Sources */,
+				C1AB77AC1459C55100F6EE34 /* CMLAppDelegate.m in Sources */,
+				C1AB77B51459C55100F6EE34 /* CMLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1AB77A41459C55100F6EE34 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AB77A51459C55100F6EE34 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C1AB77AD1459C55100F6EE34 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AB77AE1459C55100F6EE34 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C1AB77B01459C55100F6EE34 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AB77B11459C55100F6EE34 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1AB77B61459C55100F6EE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1AB77B71459C55100F6EE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1AB77B91459C55100F6EE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreMotionLogger/CoreMotionLogger-Prefix.pch";
+				INFOPLIST_FILE = "CoreMotionLogger/CoreMotionLogger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C1AB77BA1459C55100F6EE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreMotionLogger/CoreMotionLogger-Prefix.pch";
+				INFOPLIST_FILE = "CoreMotionLogger/CoreMotionLogger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1AB77911459C55100F6EE34 /* Build configuration list for PBXProject "CoreMotionLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AB77B61459C55100F6EE34 /* Debug */,
+				C1AB77B71459C55100F6EE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AB77B81459C55100F6EE34 /* Build configuration list for PBXNativeTarget "CoreMotionLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AB77B91459C55100F6EE34 /* Debug */,
+				C1AB77BA1459C55100F6EE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1AB778E1459C55100F6EE34 /* Project object */;
+}
