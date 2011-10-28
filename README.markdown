@@ -1,11 +1,18 @@
 # Core Motion Data Logger #
 
-This is a simple utility to allow the easy capture of IMU data on iOS devices for offline use. I wanted to play around with data from the accelerometer, but I decided to include all of the sensors here in case I need different data in the future.
+This is a simple utility to allow the easy capture of IMU data on iOS devices for offline use. I wanted to play around with data from the accelerometer, but I decided to include all of the sensors here in case I need different data in the future. 
 
 ![Core Motion Data Logger](https://github.com/pokeefe/CoreMotion-Data-Logger/raw/master/screenshot.png)
 
 The aspects of the IMU that you can log follow directly from the CoreMotion documentation provided by apple. For more details regarding what each switch toggles, see the CoreMotion documentation [here](http://developer.apple.com/library/ios/#documentation/CoreMotion/Reference/CoreMotion_Reference/_index.html).
 
+## Usage Notes ##
+
+The txt files this app produces can be accessed from iTunes via the standard app file sharing interface. They can also be recovered using the Xcode Organizer.
+
+This only works on iOS 5 because of Automatic Reference Counting and Storyboards. It doesn't currently check for sensor availability before logging...I'm not sure if there are any devices that run iOS 5 that don't have all these sensors. Either way, it's a TODO.
+
+With the default update rates (100 Hz), it can take a few seconds to save all of the data to disk. On an iPhone 4S, a thirty second run while logging the user acceleration and rotation rate took about 5 seconds to save. A more efficient save method will probably have to be created if anyone wants to log data at these rates for very long periods of time.
 
 ## Output Format ##
 
