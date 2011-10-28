@@ -2,7 +2,9 @@
 
 This is a simple utility to allow the easy capture of IMU data on iOS devices for offline use. I wanted to play around with data from the accelerometer, but I decided to include all of the sensors here in case I need different data in the future.
 
-The aspects of the IMU that you can log follow directly from the CoreMotion documentation provided by apple. For more details regarding what each switch toggles, see the CoreMotion documentation [here](http://developer.apple.com/library/ios/#documentation/CoreMotion/Reference/CoreMotion_Reference/_index.html). 
+![Core Motion Data Logger](https://github.com/pokeefe/CoreMotion-Data-Logger/raw/master/screenshot.png)
+
+The aspects of the IMU that you can log follow directly from the CoreMotion documentation provided by apple. For more details regarding what each switch toggles, see the CoreMotion documentation [here](http://developer.apple.com/library/ios/#documentation/CoreMotion/Reference/CoreMotion_Reference/_index.html).
 
 
 ## Output Format ##
