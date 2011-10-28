@@ -27,10 +27,10 @@
 #import "DataLogger.h"
 
 @interface CMLViewController : UIViewController {
-    
+
     DataLogger *_myDataLogger;
     bool        _loggingData;
-    
+
 }
 
 @property (weak, nonatomic) IBOutlet UISwitch *attitudeSwitch;

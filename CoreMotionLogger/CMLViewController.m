@@ -43,7 +43,7 @@
     // It's best here to stop and save what we have and throw up an alert to let the user know
     
     if (_loggingData) {
-        [_myDataLogger stopLoggingMotionData];
+        [_myDataLogger stopLoggingMotionDataAndSave];
         
         _loggingData = false;
         
@@ -135,7 +135,7 @@
     
     if (_loggingData) {
         
-        [_myDataLogger stopLoggingMotionData];
+        [_myDataLogger stopLoggingMotionDataAndSave];
         
         _loggingData = false;
         

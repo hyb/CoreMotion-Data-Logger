@@ -26,6 +26,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
 
+/**
+ * DataLogger
+ *
+ * Class that can receive motion updates from CoreMotion, append new motion data
+ * to strings in a specified format, and ultimately save that data to the app's
+ * documents directory with a timestamp.
+ */
 @interface DataLogger : NSObject {
 
     CMMotionManager *_motionManager;
@@ -53,8 +60,25 @@
 
 }
 
+/**
+ * startLoggingMotionData
+ *
+ * This method uses the boolean instance variables to tell the CMMotionManager what
+ * to do. The three main types of IMU capture each have their own NSOperationQueue.
+ * A queue will only be utilized if its respective motion type is going to be logged.
+ *
+ */
 - (void) startLoggingMotionData;
-- (void) stopLoggingMotionData;
+
+/**
+ * stopLoggingMotionDataAndSave
+ *
+ * Tells the CMMotionManager to stop the motion updates and calls the writeDataToDisk
+ * method. The only gotchya is that we wait for the NSOperationQueues to finish
+ * what they are doing first so that we're not accessing the same resource from
+ * different points in the program.
+ */
+- (void) stopLoggingMotionDataAndSave;
 
 // Setters
 - (void) setLogAttitudeData:(bool)newValue;

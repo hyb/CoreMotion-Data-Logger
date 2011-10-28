@@ -28,9 +28,35 @@
 @implementation DataLogger
 
 @interface DataLogger (hidden)
+/**
+ * processMotion:withError:
+ *
+ * Appends the new motion data to the appropriate instance variable strings.
+ */
 - (void) processMotion:(CMDeviceMotion*)motion withError:(NSError*)error;
+
+/**
+ * processAccel:withError:
+ *
+ * Appends the new raw accleration data to the appropriate instance variable string.
+ */
 - (void) processAccel:(CMAccelerometerData*)accelData withError:(NSError*)error;
+
+/**
+ * processGyro:withError:
+ *
+ * Appends the new raw gyro data to the appropriate instance variable string.
+ */
 - (void) processGyro:(CMGyroData*)gyroData withError:(NSError*)error;
+
+/**
+ * writeDataToDisk
+ *
+ * Using the boolean instance variables to know which strings to write, this method saves
+ * the data strings to the app's documents directory. The filename of each string contains
+ * a date and time string so that a user can save multiple log runs. The time format needs
+ * to be long so that a user can log two different runs that start in the same minute.
+ */
 - (void) writeDataToDisk;
 @end
 
@@ -107,7 +133,7 @@
 
 }
 
-- (void) stopLoggingMotionData {
+- (void) stopLoggingMotionDataAndSave {
 
     NSLog(@"Stopping data logging.");
 
