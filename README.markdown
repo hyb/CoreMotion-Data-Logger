@@ -31,7 +31,15 @@ There are alternative representations of the attitude (quaternions, rotation mat
 
 ## Offline Python Visualization ##
 
-Coming soon!
+The ability to experiment with different algorithms to process the IMU data is the reason that I created this project in the first place. I've been working with SciPy/NumPy quite a bit these days as a beautiful, truly object oriented, free, and open source alternative to MATLAB. I've included an example script that you can use to parse and visualize the data that comes from CoreMotion Data Logger. Look under the Visualization directory to check it out. 
+
+If you have the necessary packages installed (I don't remember what comes with Python these days), you can run the script by typing the following in your terminal:
+
+    python exampleVisualizer.py
+
+Here's one of the figures produced by the script:
+
+![Data visualization](https://github.com/pokeefe/CoreMotion-Data-Logger/raw/master/Visualization/rotationRate.png)
 
 
 ## License ##
